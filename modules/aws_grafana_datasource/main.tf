@@ -1,11 +1,11 @@
-resource "grafana_data_source" "this" {
+resource "grafana_data_source" "cloudwatch" {
   count = var.enable_cloudwatch ? 1 : 0
   
   type = "cloudwatch"
   name = "${var.grafana_data_source_name}-cloudwatch"
 
   json_data_encoded = jsonencode({
-    defaultRegion = "us-east-1"
+    defaultRegion = var.region
     authType      = "keys"
   })
 
@@ -16,3 +16,4 @@ resource "grafana_data_source" "this" {
 
   depends_on = [ aws_iam_access_key.this ]
 }
+
