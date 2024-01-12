@@ -1,0 +1,52 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "logs:ListTagsLogGroup",
+                "logs:GetLogRecord",
+                "tag:GetResources",
+                "cloudwatch:GetMetricData",
+                "tag:GetTagValues",
+                "logs:DescribeLogStreams",
+                "logs:DescribeSubscriptionFilters",
+                "logs:StartQuery",
+                "logs:DescribeMetricFilters",
+                "cloudwatch:ListMetrics",
+                "tag:GetTagKeys",
+                "logs:GetLogDelivery",
+                "logs:ListLogDeliveries",
+                "cloudwatch:DescribeAnomalyDetectors",
+                "cloudwatch:DescribeAlarmHistory",
+                "logs:TagLogGroup",
+                "cloudwatch:DescribeAlarmsForMetric",
+                "cloudwatch:ListDashboards",
+                "cloudwatch:ListTagsForResource",
+                "logs:GetLogEvents",
+                "logs:FilterLogEvents",
+                "logs:DescribeQueryDefinitions",
+                "cloudwatch:GetMetricWidgetImage",
+                "logs:DescribeResourcePolicies",
+                "logs:DescribeDestinations",
+                "logs:DescribeQueries",
+                "cloudwatch:DescribeInsightRules",
+                "cloudwatch:GetDashboard",
+                "logs:DescribeLogGroups",
+                "logs:UntagLogGroup",
+                "cloudwatch:GetInsightRuleReport",
+                "logs:StopQuery",
+                "logs:TestMetricFilter",
+                "cloudwatch:GetMetricStatistics",
+                "logs:DescribeExportTasks",
+                "logs:GetQueryResults",
+                "cloudwatch:ListMetricStreams",
+                "cloudwatch:DescribeAlarms",
+                "cloudwatch:GetMetricStream",
+                "logs:GetLogGroupFields"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
