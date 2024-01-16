@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "mediavine-terraform-test"
-    key    = "cloudwatch-data-source/terraform.tfstate"
+    key    = "cloudwatch-ecs-fargate-grafana-dashboard/terraform.tfstate"
     region = "us-east-1"
   }
 }
