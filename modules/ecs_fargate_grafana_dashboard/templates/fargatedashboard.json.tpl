@@ -1093,18 +1093,20 @@
     "templating": {
       "list": [
         {
+          "current": {},
           "hide": 0,
           "includeAll": false,
           "label": "Cluster",
           "multi": false,
           "name": "cluster",
-          "options": ${cluster_options},
+          "options": [],
           "query": "${cluster_query_string}",
           "queryValue": "",
           "skipUrlSync": false,
           "type": "custom"
         },
         {
+          "current": {},
           "hide": 2,
           "includeAll": false,
           "label": "Data Source ",
@@ -1123,7 +1125,7 @@
           "label": "Region",
           "multi": false,
           "name": "region",
-          "options": ${region_options},
+          "options": [],
           "query": "${region_query_string}",
           "queryValue": "",
           "skipUrlSync": false,
@@ -1137,8 +1139,8 @@
     },
     "timepicker": {},
     "timezone": "",
-    "title": "ECS FARGATE HEALTH DASHBOARD - Draft",
-    "uid": "d4796651-01eb-4b12-9ad5-049eb9fcb326",
-    "version": 60,
+    "title": "ECS FARGATE HEALTH DASHBOARD - ${cloudwatch_data_source_name}",
+    "uid": "${dashboard_uid}",
+    "version": 1,
     "weekStart": ""
   }

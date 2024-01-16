@@ -1,6 +1,6 @@
 resource "grafana_data_source" "cloudwatch" {
   count = var.enable_cloudwatch ? 1 : 0
-  
+
   type = "cloudwatch"
   name = "${var.grafana_data_source_name}-cloudwatch"
 
@@ -14,6 +14,6 @@ resource "grafana_data_source" "cloudwatch" {
     secretKey = aws_iam_access_key.this.secret
   }))
 
-  depends_on = [ aws_iam_access_key.this ]
+  depends_on = [aws_iam_access_key.this]
 }
 
