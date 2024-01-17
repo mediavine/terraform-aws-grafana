@@ -409,7 +409,7 @@
               "uid": "${datasource}"
             },
             "dimensions": {
-              "LoadBalancer": "app/s2s-load-balancer/72eb58a3a3ffb9ab"
+              "LoadBalancer": "*"
             },
             "expression": "",
             "id": "",
@@ -815,7 +815,7 @@
               "uid": "${datasource}"
             },
             "dimensions": {
-              "LoadBalancer": "app/s2s-load-balancer/72eb58a3a3ffb9ab"
+              "LoadBalancer": "*"
             },
             "expression": "",
             "hide": false,
@@ -840,7 +840,7 @@
               "uid": "${datasource}"
             },
             "dimensions": {
-              "LoadBalancer": "app/s2s-load-balancer/72eb58a3a3ffb9ab"
+              "LoadBalancer": "*"
             },
             "expression": "",
             "hide": false,
