@@ -9,10 +9,10 @@ resource "grafana_data_source" "cloudwatch" {
     authType      = "keys"
   })
 
-  secure_json_data_encoded = sensitive(jsonencode({
+  secure_json_data_encoded = jsonencode({
     accessKey = aws_iam_access_key.this.id
     secretKey = aws_iam_access_key.this.secret
-  }))
+  })
 
   depends_on = [aws_iam_access_key.this]
 }
