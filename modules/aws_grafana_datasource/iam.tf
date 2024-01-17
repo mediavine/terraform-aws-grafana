@@ -12,7 +12,7 @@ resource "aws_iam_policy" "cloudwatch_policy" {
 
   name        = "${var.grafana_data_source_name}-cloudwatch-policy"
   description = "Policy for reading cloudwatch data"
-  policy = templatefile("../../modules/aws_grafana_datasource/policies/grafana_aws_policy.json", {
+  policy = templatefile("${path.module}/policies/grafana_aws_policy.json", {
     region = "us-east-1"
   })
 }
