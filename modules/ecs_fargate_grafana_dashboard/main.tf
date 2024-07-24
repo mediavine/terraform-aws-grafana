@@ -31,7 +31,7 @@ resource "grafana_folder" "this" {
   count                        = var.create_folder ? 1 : 0
   title                        = "${var.dashboard_uid}-${random_string.this[0].result}"
   uid                          = "${var.dashboard_uid}-${random_string.this[0].result}-uid"
-  prevent_destroy_if_not_empty = true
+  prevent_destroy_if_not_empty = var.prevent_destroy_if_not_empty
 }
 
 resource "grafana_dashboard" "this" {

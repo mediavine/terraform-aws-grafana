@@ -44,3 +44,9 @@ variable "folder" {
   default     = ""
   description = "folder to place the dashboard in"
 }
+
+variable "prevent_destroy_if_not_empty" {
+  type        = bool
+  default     = true
+  description = "used for the grafana folder resource"
+}
