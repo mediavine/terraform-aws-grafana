@@ -22,7 +22,7 @@ module "this" {
     #user to connect to db that already exists
     master_password = data.aws_ssm_parameter.master_password.value
     master_username = data.aws_ssm_parameter.master_username.value
-    primary_database_name = data.aws_ssm_parameter.database_name.value
+    primary_database_name = data.aws_ssm_parameter.primary_database_name.value
     primary_host = data.aws_ssm_parameter.primary_host.value
 }   
 
