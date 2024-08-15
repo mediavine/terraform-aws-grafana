@@ -94,3 +94,12 @@ variable "master_password" {
   description = "Password used to connect to existing database user"
 }
 
+variable "primary_database_name" {
+  type       = string
+  description = "Name of the primary database that creates the grafana read only user"
+}
+
+variable "primary_host" {
+  type       = string
+  description = "Host of the primary database hat creates the grafana read only user"
+}
