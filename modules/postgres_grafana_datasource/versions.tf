@@ -21,8 +21,8 @@ terraform {
 provider "postgresql" {
   scheme   = "awspostgres"
   port     = var.port
-  host     = var.host
-  database = var.database
+  host     = var.primary_host
+  database = var.primary_database_name
   username = var.master_username #existing username in db to use for connection
   password = var.master_password #existing pwd in db to use for connection
   superuser = false # must be set to false since we're not connecting with a superuser role

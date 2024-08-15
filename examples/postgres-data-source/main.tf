@@ -8,7 +8,7 @@ module "this" {
     host = data.aws_ssm_parameter.host.value
     user = data.aws_ssm_parameter.new_username.value   #new username for user that is being created
     password = data.aws_ssm_parameter.new_password.value  #new pwd for user that is being created
-    database = data.aws_ssm_parameter.database_name.value
+    database = data.aws_ssm_parameter.database_name.value #name of database in grafana datasource
     sslmode = "require"
     max_open_conns = 10
     max_idle_conns = 2
@@ -22,6 +22,8 @@ module "this" {
     #user to connect to db that already exists
     master_password = data.aws_ssm_parameter.master_password.value
     master_username = data.aws_ssm_parameter.master_username.value
+    primary_database_name = data.aws_ssm_parameter.primary_database_name.value
+    primary_host = data.aws_ssm_parameter.primary_host.value
 }   
 
 module "that" {
@@ -67,4 +69,12 @@ data "aws_ssm_parameter" "database_name" {
 
 data "aws_ssm_parameter" "db_identifier" {
   name = "/test/datasource/db_identifier"
+}
+
+data "aws_ssm_parameter" "primary_host" {
+  name = "/test/datasource/primary_host"
+}
+
+data "aws_ssm_parameter" "primary_database_name" {
+  name = "/test/datasource/primary_database_name"
 }
