@@ -27,7 +27,7 @@ resource "postgresql_role" "grafana_read_only_user" {
   name      = var.user
   login     = true
   password  = var.password
-  roles     = ["pg_read_all_data", "pg_monitor", "pg_read_all_settings", "pg_read_all_stats"] #existing roles in postgres but can be adjusted
+  roles     = ["pg_monitor", "pg_read_all_settings", "pg_read_all_stats"] #existing roles in postgres but can be adjusted
 }
 
 #Grant read only permissions on table, can be adjusted accordingly
