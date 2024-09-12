@@ -27,7 +27,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "edoh7tx3ao0sge"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -105,7 +105,7 @@
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "format": "table",
@@ -137,7 +137,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "edoh7tx3ao0sge"
+        "uid": "${datasource}"
       },
       "description": "",
       "fieldConfig": {
@@ -190,7 +190,7 @@
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "format": "table",
@@ -222,7 +222,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "edoh7tx3ao0sge"
+        "uid": "${datasource}"
       },
       "description": "Info about background processes",
       "fieldConfig": {
@@ -304,7 +304,7 @@
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "format": "table",
@@ -336,7 +336,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "edoh7tx3ao0sge"
+        "uid": "${datasource}"
       },
       "description": "Connections that are used, reserved for superuser, and max number of connections.",
       "fieldConfig": {
@@ -388,7 +388,7 @@
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "format": "table",
@@ -420,7 +420,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "edoh7tx3ao0sge"
+        "uid": "${datasource}"
       },
       "description": "",
       "fieldConfig": {
@@ -476,7 +476,7 @@
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "format": "table",
@@ -508,7 +508,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "edoh7tx3ao0sge"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -563,7 +563,7 @@
         {
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "format": "table",
@@ -595,7 +595,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "edoh7tx3ao0sge"
+        "uid": "${datasource}"
       },
       "description": "Idle and Active Connections",
       "fieldConfig": {
@@ -669,7 +669,7 @@
           },
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "dimensions": {
             "DBInstanceIdentifier": "$dbinstanceidentifier"
@@ -729,7 +729,7 @@
           },
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "edoh7tx3ao0sge"
+            "uid": "${datasource}"
           },
           "dimensions": {
             "DBInstanceIdentifier": "$dbinstanceidentifier"

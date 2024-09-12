@@ -17,6 +17,7 @@ data "template_file" "this" {
       dbinstanceidentifier        = join(", ", local.dbinstanceidentifier)
       datasource_regex            = local.datasource_regex
       database_name               = local.database_name
+      datasource                  = local.postgres_data_source_name
   })
 }
 
