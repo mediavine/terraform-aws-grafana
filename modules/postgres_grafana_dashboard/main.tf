@@ -1,23 +1,23 @@
 locals {
-  postgres_data_source_name   = var.postgres_data_source_name
-  regions                     = var.region
-  dbinstanceidentifier        = var.dbinstanceidentifier
-  dashboard_uid               = var.dashboard_uid
-  datasource_regex            = "/^${var.postgres_data_source_name}/"
-  database_name               = var.database_name
+  postgres_data_source_name = var.postgres_data_source_name
+  regions                   = var.region
+  dbinstanceidentifier      = var.dbinstanceidentifier
+  dashboard_uid             = var.dashboard_uid
+  datasource_regex          = "/^${var.postgres_data_source_name}/"
+  database_name             = var.database_name
 }
 
 
 data "template_file" "this" {
   template = templatefile("${path.module}/templates/postgresdashboard.json.tpl",
     {
-      postgres_data_source_name   = local.postgres_data_source_name
-      region_query_string         = join(", ", local.regions)
-      dashboard_uid               = local.dashboard_uid
-      dbinstanceidentifier        = join(", ", local.dbinstanceidentifier)
-      datasource_regex            = local.datasource_regex
-      database_name               = local.database_name
-      datasource                  = local.postgres_data_source_name
+      postgres_data_source_name = local.postgres_data_source_name
+      region_query_string       = join(", ", local.regions)
+      dashboard_uid             = local.dashboard_uid
+      dbinstanceidentifier      = join(", ", local.dbinstanceidentifier)
+      datasource_regex          = local.datasource_regex
+      database_name             = local.database_name
+      datasource                = local.postgres_data_source_name
   })
 }
 

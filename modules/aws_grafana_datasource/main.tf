@@ -16,4 +16,3 @@ resource "grafana_data_source" "cloudwatch" {
 
   depends_on = [aws_iam_access_key.this]
 }
-

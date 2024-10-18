@@ -7,12 +7,18 @@ terraform {
     }
     grafana = {
       source  = "grafana/grafana"
-      version = "2.8.1"
+      version = "2.19.4"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = ">= 3.6.3"
+    }
+
+    template = {
+      source  = "hashicorp/template"
+      version = ">= 2.2.0"
     }
   }
-}
-
-provider "aws" {
 }
 
 provider "grafana" {

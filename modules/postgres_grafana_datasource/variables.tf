@@ -3,7 +3,7 @@ variable "grafana_api_token" {
   description = "API token for Grafana"
 }
 
-  variable "grafana_data_source_name" {
+variable "grafana_data_source_name" {
   type        = string
   description = "value of the grafana data source name"
 }
@@ -63,10 +63,10 @@ variable "time_interval" {
   description = "Time interval"
 }
 
-variable "region" {
-  type        = string
-  description = "AWS region"
-}
+# variable "region" {
+#   type        = string
+#   description = "AWS region"
+# }
 
 variable "host" {
   type        = string
@@ -85,21 +85,21 @@ variable "expected_version" {
 }
 
 variable "master_username" {
-  type       = string
+  type        = string
   description = "Username used to connect to existing database user"
 }
 
 variable "master_password" {
-  type       = string
+  type        = string
   description = "Password used to connect to existing database user"
 }
 
 variable "primary_database_name" {
-  type       = string
+  type        = string
   description = "Name of the primary database that creates the grafana read only user"
 }
 
 variable "primary_host" {
-  type       = string
+  type        = string
   description = "Host of the primary database hat creates the grafana read only user"
 }
