@@ -23,4 +23,3 @@ output "grafana_dashboard_version" {
   description = "(Number) Whenever you save a version of your dashboard, a copy of that version is saved so that previous versions of your dashboard are not lost."
 
 }
-
