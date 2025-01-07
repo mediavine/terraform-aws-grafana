@@ -27,6 +27,6 @@ provider "grafana" {
   # url  = "https://monitoring.mv-ops.com/"
 
   # Cloud version of Grafana
-  url  = "https://mediavine.grafana.net/"
-  auth = var.grafana_api_token
+  url                       = "https://mediavine.grafana.net/"
+  cloud_access_policy_token = var.grafana_api_token
 }
