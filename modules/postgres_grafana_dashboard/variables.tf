@@ -47,3 +47,9 @@ variable "database_name" {
   type        = string
   description = "name of the database"
 }
+
+variable "parent_folder_uid" {
+  type        = string
+  default     = ""
+  description = "parent folder uid"
+}

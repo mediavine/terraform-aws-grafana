@@ -50,3 +50,9 @@ variable "prevent_destroy_if_not_empty" {
   default     = true
   description = "used for the grafana folder resource"
 }
+
+variable "parent_folder_uid" {
+  type        = string
+  default     = ""
+  description = "parent folder uid"
+}
