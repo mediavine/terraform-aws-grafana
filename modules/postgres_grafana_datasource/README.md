@@ -95,7 +95,7 @@ No modules.
 | <a name="input_conn_max_lifetime"></a> [conn\_max\_lifetime](#input\_conn\_max\_lifetime) | The maximum amount of time in seconds a connection may be reused | `number` | n/a | yes |
 | <a name="input_database"></a> [database](#input\_database) | Name of the database | `string` | n/a | yes |
 | <a name="input_expected_version"></a> [expected\_version](#input\_expected\_version) | version of the database | `string` | n/a | yes |
-| <a name="input_grafana_api_token"></a> [grafana\_api\_token](#input\_grafana\_api\_token) | API token for Grafana | `string` | n/a | yes |
+| <a name="input_grafana_cloud_api_token"></a> [grafana\_cloud\_api\_token](#input\_grafana\_cloud\_api\_token) | API token for Grafana Cloud | `string` | n/a | yes |
 | <a name="input_grafana_data_source_name"></a> [grafana\_data\_source\_name](#input\_grafana\_data\_source\_name) | value of the grafana data source name | `string` | n/a | yes |
 | <a name="input_host"></a> [host](#input\_host) | Host of the database | `string` | n/a | yes |
 | <a name="input_master_password"></a> [master\_password](#input\_master\_password) | Password used to connect to existing database user | `string` | n/a | yes |

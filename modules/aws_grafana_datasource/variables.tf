@@ -16,10 +16,10 @@ variable "enable_cloudwatch" {
   description = "control whether to enable cloudwatch related resources are created"
 }
 
-variable "grafana_api_token" {
+variable "grafana_cloud_api_token" {
   type        = string
   default     = ""
-  description = "value of the grafana api token"
+  description = "value of the grafana cloud api token"
 }
 
 variable "enable_amazon_prometheus" {

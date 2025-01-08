@@ -43,9 +43,9 @@ No modules.
 | <a name="input_enable_amazon_prometheus"></a> [enable\_amazon\_prometheus](#input\_enable\_amazon\_prometheus) | control whether to enable amazon prometheus related resources are created | `bool` | `false` | no |
 | <a name="input_enable_cloudwatch"></a> [enable\_cloudwatch](#input\_enable\_cloudwatch) | control whether to enable cloudwatch related resources are created | `bool` | `false` | no |
 | <a name="input_enable_xray"></a> [enable\_xray](#input\_enable\_xray) | control whether to enable xray related resources are created | `bool` | `false` | no |
-| <a name="input_grafana_api_token"></a> [grafana\_api\_token](#input\_grafana\_api\_token) | value of the grafana api token | `string` | `""` | no |
 | <a name="input_grafana_aws_account_id"></a> [grafana\_aws\_account\_id](#input\_grafana\_aws\_account\_id) | value of the grafana aws account id | `string` | n/a | yes |
 | <a name="input_grafana_aws_external_id"></a> [grafana\_aws\_external\_id](#input\_grafana\_aws\_external\_id) | value of the grafana aws external id | `string` | n/a | yes |
+| <a name="input_grafana_cloud_api_token"></a> [grafana\_cloud\_api\_token](#input\_grafana\_cloud\_api\_token) | value of the grafana cloud api token | `string` | `""` | no |
 | <a name="input_grafana_data_source_name"></a> [grafana\_data\_source\_name](#input\_grafana\_data\_source\_name) | value of the grafana data source name | `string` | `"cloudwatch"` | no |
 | <a name="input_region"></a> [region](#input\_region) | value of the aws region | `string` | `"us-east-1"` | no |
 

@@ -34,9 +34,9 @@ variable "dashboard_uid" {
   description = "unique identifier for the dashboard"
 }
 
-variable "grafana_api_token" {
+variable "grafana_cloud_api_token" {
   type        = string
-  description = "API token for Grafana"
+  description = "API token for Grafana Cloud"
 }
 
 variable "folder" {

@@ -46,7 +46,7 @@ No modules.
 | <a name="input_dashboard_uid"></a> [dashboard\_uid](#input\_dashboard\_uid) | unique identifier for the dashboard | `string` | `"cloudwatch-dashboard"` | no |
 | <a name="input_enable_overwrite_dashboard"></a> [enable\_overwrite\_dashboard](#input\_enable\_overwrite\_dashboard) | overwrite the dashboard if it exists | `bool` | `false` | no |
 | <a name="input_folder"></a> [folder](#input\_folder) | folder to place the dashboard in | `string` | `""` | no |
-| <a name="input_grafana_api_token"></a> [grafana\_api\_token](#input\_grafana\_api\_token) | API token for Grafana | `string` | n/a | yes |
+| <a name="input_grafana_cloud_api_token"></a> [grafana\_cloud\_api\_token](#input\_grafana\_cloud\_api\_token) | API token for Grafana Cloud | `string` | n/a | yes |
 | <a name="input_parent_folder_uid"></a> [parent\_folder\_uid](#input\_parent\_folder\_uid) | parent folder uid | `string` | `""` | no |
 | <a name="input_prevent_destroy_if_not_empty"></a> [prevent\_destroy\_if\_not\_empty](#input\_prevent\_destroy\_if\_not\_empty) | used for the grafana folder resource | `bool` | `true` | no |
 | <a name="input_region_query"></a> [region\_query](#input\_region\_query) | name of queriable regions | `list(string)` | <pre>[<br>  "*"<br>]</pre> | no |
