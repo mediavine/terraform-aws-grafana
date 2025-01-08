@@ -1,6 +1,6 @@
-variable "grafana_api_token" {
+variable "grafana_cloud_api_token" {
   type        = string
-  description = "API token for Grafana"
+  description = "API token for Grafana Cloud"
 }
 
 variable "postgres_data_source_name" {
@@ -46,4 +46,10 @@ variable "enable_overwrite_dashboard" {
 variable "database_name" {
   type        = string
   description = "name of the database"
+}
+
+variable "parent_folder_uid" {
+  type        = string
+  default     = ""
+  description = "parent folder uid"
 }

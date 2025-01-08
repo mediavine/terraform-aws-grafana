@@ -34,9 +34,9 @@ variable "dashboard_uid" {
   description = "unique identifier for the dashboard"
 }
 
-variable "grafana_api_token" {
+variable "grafana_cloud_api_token" {
   type        = string
-  description = "API token for Grafana"
+  description = "API token for Grafana Cloud"
 }
 
 variable "folder" {
@@ -49,4 +49,10 @@ variable "prevent_destroy_if_not_empty" {
   type        = bool
   default     = true
   description = "used for the grafana folder resource"
+}
+
+variable "parent_folder_uid" {
+  type        = string
+  default     = ""
+  description = "parent folder uid"
 }
