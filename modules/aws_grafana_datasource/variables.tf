@@ -32,5 +32,14 @@ variable "enable_xray" {
   type        = bool
   default     = false
   description = "control whether to enable xray related resources are created"
+}
 
+variable "grafana_aws_account_id" {
+  type        = string
+  description = "value of the grafana aws account id"
+}
+
+variable "grafana_aws_external_id" {
+  type        = string
+  description = "value of the grafana aws external id"
 }
