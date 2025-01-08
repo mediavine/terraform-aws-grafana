@@ -651,7 +651,7 @@
                 }
               ]
             },
-            "unit": "ms"
+            "unit": "s"
           },
           "overrides": []
         },

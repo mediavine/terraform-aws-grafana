@@ -22,6 +22,11 @@ terraform {
 }
 
 provider "grafana" {
-  url  = "https://monitoring.mv-ops.com/"
-  auth = var.grafana_api_token
+  # Commenting this out because this is the oss version of grafana
+  # url  = "https://monitoring.mv-ops.com/"
+
+  # Cloud version of Grafana
+  url = "https://mediavine.grafana.net/"
+  # not using var.grafana_api_token here because we don't want to break deploys
+  auth = var.grafana_cloud_api_token
 }

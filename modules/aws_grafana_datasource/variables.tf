@@ -16,10 +16,10 @@ variable "enable_cloudwatch" {
   description = "control whether to enable cloudwatch related resources are created"
 }
 
-variable "grafana_api_token" {
+variable "grafana_cloud_api_token" {
   type        = string
   default     = ""
-  description = "value of the grafana api token"
+  description = "value of the grafana cloud api token"
 }
 
 variable "enable_amazon_prometheus" {
@@ -32,5 +32,14 @@ variable "enable_xray" {
   type        = bool
   default     = false
   description = "control whether to enable xray related resources are created"
+}
 
+variable "grafana_aws_account_id" {
+  type        = string
+  description = "value of the grafana aws account id"
+}
+
+variable "grafana_aws_external_id" {
+  type        = string
+  description = "value of the grafana aws external id"
 }

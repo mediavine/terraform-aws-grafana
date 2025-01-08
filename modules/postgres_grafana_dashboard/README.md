@@ -90,7 +90,8 @@ No modules.
 | <a name="input_dbinstanceidentifier"></a> [dbinstanceidentifier](#input\_dbinstanceidentifier) | DB instance identity of the RDS instance | `list(string)` | n/a | yes |
 | <a name="input_enable_overwrite_dashboard"></a> [enable\_overwrite\_dashboard](#input\_enable\_overwrite\_dashboard) | overwrite the dashboard if it exists | `bool` | `false` | no |
 | <a name="input_folder"></a> [folder](#input\_folder) | folder to place the dashboard in | `string` | `""` | no |
-| <a name="input_grafana_api_token"></a> [grafana\_api\_token](#input\_grafana\_api\_token) | API token for Grafana | `string` | n/a | yes |
+| <a name="input_grafana_cloud_api_token"></a> [grafana\_cloud\_api\_token](#input\_grafana\_cloud\_api\_token) | API token for Grafana Cloud | `string` | n/a | yes |
+| <a name="input_parent_folder_uid"></a> [parent\_folder\_uid](#input\_parent\_folder\_uid) | parent folder uid | `string` | `""` | no |
 | <a name="input_postgres_data_source_name"></a> [postgres\_data\_source\_name](#input\_postgres\_data\_source\_name) | name of the postgres data source | `string` | `"postgres"` | no |
 | <a name="input_region"></a> [region](#input\_region) | AWS region | `list(string)` | n/a | yes |
 
