@@ -1,4 +1,4 @@
-# cloudwatch-ecs-fargate-dashboard
+# amp-data-source
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 README.MD updated successfully
@@ -20,7 +20,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_this"></a> [this](#module\_this) | ../../modules/ecs_fargate_grafana_dashboard | n/a |
+| <a name="module_this"></a> [this](#module\_this) | ../../modules/aws_grafana_datasource | n/a |
 
 ## Resources
 
