@@ -11,7 +11,7 @@ README.MD updated successfully
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.0 |
-| <a name="requirement_grafana"></a> [grafana](#requirement\_grafana) | 2.19.4 |
+| <a name="requirement_grafana"></a> [grafana](#requirement\_grafana) | 3.17.0 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.3 |
 | <a name="requirement_template"></a> [template](#requirement\_template) | >= 2.2.0 |
 
@@ -19,7 +19,7 @@ README.MD updated successfully
 
 | Name | Version |
 |------|---------|
-| <a name="provider_grafana"></a> [grafana](#provider\_grafana) | 2.19.4 |
+| <a name="provider_grafana"></a> [grafana](#provider\_grafana) | 3.17.0 |
 | <a name="provider_random"></a> [random](#provider\_random) | >= 3.6.3 |
 | <a name="provider_template"></a> [template](#provider\_template) | >= 2.2.0 |
 
@@ -31,8 +31,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [grafana_dashboard.this](https://registry.terraform.io/providers/grafana/grafana/2.19.4/docs/resources/dashboard) | resource |
-| [grafana_folder.this](https://registry.terraform.io/providers/grafana/grafana/2.19.4/docs/resources/folder) | resource |
+| [grafana_dashboard.this](https://registry.terraform.io/providers/grafana/grafana/3.17.0/docs/resources/dashboard) | resource |
+| [grafana_folder.this](https://registry.terraform.io/providers/grafana/grafana/3.17.0/docs/resources/folder) | resource |
 | [random_string.this](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [template_file.this](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
 
