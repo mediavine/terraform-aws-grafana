@@ -7,7 +7,7 @@ terraform {
     }
     grafana = {
       source  = "grafana/grafana"
-      version = "2.19.4"
+      version = "3.17.0"
     }
     random = {
       source  = "hashicorp/random"
