@@ -8,6 +8,25 @@ resource "aws_iam_role" "this" {
   })
 }
 
+# Athena IAM Policies if var.type is athena
+resource "aws_iam_policy" "athena_policy" {
+  count = var.type == "grafana-athena-datasource" ? 1 : 0
+
+  name        = "${var.grafana_data_source_name}-athena-policy"
+  description = "Policy for reading athena data"
+  policy = templatefile("${path.module}/policies/athena_aws_policy.json", {
+    destination_bucket = var.destination_bucket_arn
+    log_bucket         = "arn:aws:s3:::${var.log_bucket_name}"
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "athena_policy_attachment" {
+  count = var.type == "grafana-athena-datasource" ? 1 : 0
+
+  role       = aws_iam_role.this[count.index].name
+  policy_arn = aws_iam_policy.athena_policy[count.index].arn
+}
+
 # Cloudwatch IAM Policies if var.enable_cloudwatch is true
 resource "aws_iam_policy" "cloudwatch_policy" {
   count = var.type == "cloudwatch" ? 1 : 0

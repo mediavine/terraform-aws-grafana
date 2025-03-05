@@ -1,0 +1,59 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "athena:GetDatabase",
+                "athena:GetDataCatalog",
+                "athena:GetTableMetadata",
+                "athena:ListDatabases",
+                "athena:ListDataCatalogs",
+                "athena:ListTableMetadata",
+                "athena:ListWorkGroups",
+                "athena:GetQueryExecution",
+                "athena:GetQueryResults",
+                "athena:GetWorkGroup",
+                "athena:StartQueryExecution",
+                "athena:StopQueryExecution"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabase",
+                "glue:GetDatabases",
+                "glue:GetTable",
+                "glue:GetTables",
+                "glue:GetPartition",
+                "glue:GetPartitions",
+                "glue:BatchGetPartition"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "S3Access",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListMultipartUploadParts",
+                "s3:AbortMultipartUpload",
+                "s3:CreateBucket",
+                "s3:PutObject",
+                "s3:PutBucketPublicAccessBlock"
+            ],
+            "Resource": [
+                "${log_bucket}",
+                "${log_bucket}/*",
+                "${destination_bucket}",
+                "${destination_bucket}/*"
+            ]
+        }
+    ]
+}
