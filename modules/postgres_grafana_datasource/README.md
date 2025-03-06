@@ -66,14 +66,14 @@ README.MD updated successfully
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.0 |
-| <a name="requirement_grafana"></a> [grafana](#requirement\_grafana) | 2.19.4 |
+| <a name="requirement_grafana"></a> [grafana](#requirement\_grafana) | 3.17.0 |
 | <a name="requirement_postgresql"></a> [postgresql](#requirement\_postgresql) | 1.22.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_grafana"></a> [grafana](#provider\_grafana) | 2.19.4 |
+| <a name="provider_grafana"></a> [grafana](#provider\_grafana) | 3.17.0 |
 | <a name="provider_postgresql"></a> [postgresql](#provider\_postgresql) | 1.22.0 |
 
 ## Modules
@@ -84,7 +84,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [grafana_data_source.postgres](https://registry.terraform.io/providers/grafana/grafana/2.19.4/docs/resources/data_source) | resource |
+| [grafana_data_source.postgres](https://registry.terraform.io/providers/grafana/grafana/3.17.0/docs/resources/data_source) | resource |
 | [postgresql_grant.grant_grafana_read_only](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/grant) | resource |
 | [postgresql_role.grafana_read_only_user](https://registry.terraform.io/providers/cyrilgdn/postgresql/1.22.0/docs/resources/role) | resource |
 
