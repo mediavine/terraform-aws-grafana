@@ -8,5 +8,4 @@ variable "grafana_data_source_name" {
   type        = string
   default     = "journey"
   description = "value of the grafana data source name"
-
 }
