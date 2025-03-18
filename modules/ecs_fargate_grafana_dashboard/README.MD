@@ -41,7 +41,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_cloudwatch_data_source_name"></a> [cloudwatch\_data\_source\_name](#input\_cloudwatch\_data\_source\_name) | name of the cloudwatch data source | `string` | `"cloudwatch"` | no |
-| <a name="input_cluster_query"></a> [cluster\_query](#input\_cluster\_query) | name of queriable ECS clusters | `list(string)` | <pre>[<br>  "*"<br>]</pre> | no |
+| <a name="input_cluster_query"></a> [cluster\_query](#input\_cluster\_query) | name of queriable ECS clusters | `list(string)` | <pre>[<br/>  "*"<br/>]</pre> | no |
 | <a name="input_create_folder"></a> [create\_folder](#input\_create\_folder) | create a folder for the dashboard | `bool` | `false` | no |
 | <a name="input_dashboard_uid"></a> [dashboard\_uid](#input\_dashboard\_uid) | unique identifier for the dashboard | `string` | `"cloudwatch-dashboard"` | no |
 | <a name="input_enable_overwrite_dashboard"></a> [enable\_overwrite\_dashboard](#input\_enable\_overwrite\_dashboard) | overwrite the dashboard if it exists | `bool` | `false` | no |
@@ -49,7 +49,7 @@ No modules.
 | <a name="input_grafana_cloud_api_token"></a> [grafana\_cloud\_api\_token](#input\_grafana\_cloud\_api\_token) | API token for Grafana Cloud | `string` | n/a | yes |
 | <a name="input_parent_folder_uid"></a> [parent\_folder\_uid](#input\_parent\_folder\_uid) | parent folder uid | `string` | `""` | no |
 | <a name="input_prevent_destroy_if_not_empty"></a> [prevent\_destroy\_if\_not\_empty](#input\_prevent\_destroy\_if\_not\_empty) | used for the grafana folder resource | `bool` | `true` | no |
-| <a name="input_region_query"></a> [region\_query](#input\_region\_query) | name of queriable regions | `list(string)` | <pre>[<br>  "*"<br>]</pre> | no |
+| <a name="input_region_query"></a> [region\_query](#input\_region\_query) | name of queriable regions | `list(string)` | <pre>[<br/>  "*"<br/>]</pre> | no |
 
 ## Outputs
 
