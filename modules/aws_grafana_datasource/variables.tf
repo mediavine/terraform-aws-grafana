@@ -4,6 +4,12 @@ variable "region" {
   description = "value of the aws region"
 }
 
+variable "destination_bucket_arn" {
+  type        = string
+  description = "value of the destination bucket arn"
+  default     = ""
+}
+
 variable "grafana_data_source_name" {
   type        = string
   default     = "cloudwatch"
@@ -13,10 +19,10 @@ variable "grafana_data_source_name" {
 # details on the 'can' function: https://developer.hashicorp.com/terraform/language/functions/can
 variable "type" {
   type        = string
-  description = "control whether to enable cloudwatch related resources are created"
+  description = "Selects which type of data source to create. Valid values are cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource"
   validation {
-    condition     = can(regex("cloudwatch|grafana-amazonprometheus-datasource", var.type))
-    error_message = "Type must be either cloudwatch or grafana-amazonprometheus-datasource."
+    condition     = can(regex("cloudwatch|grafana-amazonprometheus-datasource|grafana-athena-datasource", var.type))
+    error_message = "Acceptable types: cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource"
   }
 }
 
@@ -48,4 +54,34 @@ variable "amp_workspace_url" {
   type        = string
   default     = ""
   description = "value of the Amazon Managed Service for Prometheus workspace url"
+}
+
+variable "athena_workgroup" {
+  type        = string
+  default     = ""
+  description = "value of the Athena workgroup to use"
+}
+
+variable "athena_database" {
+  type        = string
+  default     = ""
+  description = "value of the Athena database to use"
+}
+
+# variable "athena_output_location" {
+#   type        = string
+#   default     = ""
+#   description = "value of the Athena output location"
+# }
+
+variable "athena_datasource" {
+  type        = string
+  default     = ""
+  description = "value of the Athena datasource"
+}
+
+variable "log_bucket_name" {
+  type        = string
+  default     = ""
+  description = "value of the log bucket name"
 }
