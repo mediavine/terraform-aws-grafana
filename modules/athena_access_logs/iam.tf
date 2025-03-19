@@ -1,5 +1,5 @@
 resource "aws_iam_role" "athena" {
-  name = "athena-access-logs-role"
+  name = "athena-access-logs-role-${var.region}"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -16,7 +16,7 @@ resource "aws_iam_role" "athena" {
 }
 
 resource "aws_iam_policy" "athena_s3_access" {
-  name = "athena-s3-access-policy"
+  name = "athena-s3-access-policy-${var.region}"
 
   policy = jsonencode({
     Version = "2012-10-17"
