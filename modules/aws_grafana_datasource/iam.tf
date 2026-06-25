@@ -1,6 +1,9 @@
 resource "aws_iam_role" "this" {
   count = var.type != "grafana-amazonprometheus-datasource" ? 1 : 0
-  name  = "${var.grafana_data_source_name}-role"
+  # X-Ray gets its own role name suffix so it doesn't collide with the
+  # CloudWatch role when both data sources share a grafana_data_source_name
+  # (the common case -- e.g. DataPlatformProd is used by both).
+  name = var.type == "grafana-x-ray-datasource" ? "${var.grafana_data_source_name}-xray-role" : "${var.grafana_data_source_name}-role"
   assume_role_policy = templatefile("${path.module}/policies/grafana_cloud_trust_policy.json", {
     region                  = var.region
     grafana_aws_account_id  = var.grafana_aws_account_id
