@@ -44,9 +44,11 @@ resource "aws_iam_role_policy_attachment" "cloudwatch_policy_attachment" {
   role       = aws_iam_role.this[count.index].name
   policy_arn = aws_iam_policy.cloudwatch_policy[count.index].arn
 }
-# X-Ray IAM Policies if var.enable_xray is true
+# X-Ray IAM Policies -- attached when the data source type is X-Ray,
+# OR when enable_xray=true on another type (e.g. a CloudWatch role that
+# also needs X-Ray read access for combined service-map queries).
 resource "aws_iam_role_policy_attachment" "aws_xray_read_policy_attachment" {
-  count = var.enable_xray ? 1 : 0
+  count = var.type == "grafana-x-ray-datasource" || var.enable_xray ? 1 : 0
 
   role       = aws_iam_role.this[count.index].name
   policy_arn = "arn:aws:iam::aws:policy/AWSXrayReadOnlyAccess"

@@ -19,10 +19,10 @@ variable "grafana_data_source_name" {
 # details on the 'can' function: https://developer.hashicorp.com/terraform/language/functions/can
 variable "type" {
   type        = string
-  description = "Selects which type of data source to create. Valid values are cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource"
+  description = "Selects which type of data source to create. Valid values are cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource, grafana-x-ray-datasource"
   validation {
-    condition     = can(regex("cloudwatch|grafana-amazonprometheus-datasource|grafana-athena-datasource", var.type))
-    error_message = "Acceptable types: cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource"
+    condition     = can(regex("cloudwatch|grafana-amazonprometheus-datasource|grafana-athena-datasource|grafana-x-ray-datasource", var.type))
+    error_message = "Acceptable types: cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource, grafana-x-ray-datasource"
   }
 }
 
