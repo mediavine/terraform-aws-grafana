@@ -48,3 +48,16 @@ resource "grafana_data_source" "athena" {
   })
 
 }
+
+resource "grafana_data_source" "xray" {
+  count = var.type == "grafana-x-ray-datasource" ? 1 : 0
+
+  type = var.type
+  name = "${var.grafana_data_source_name}-xray"
+
+  json_data_encoded = jsonencode({
+    defaultRegion = var.region
+    authType      = "grafana_assume_role"
+    assumeRoleArn = aws_iam_role.this[count.index].arn
+  })
+}

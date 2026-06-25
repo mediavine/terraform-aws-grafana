@@ -41,6 +41,7 @@ No modules.
 | [grafana_data_source.amazon_managed_prometheus](https://registry.terraform.io/providers/grafana/grafana/3.17.0/docs/resources/data_source) | resource |
 | [grafana_data_source.athena](https://registry.terraform.io/providers/grafana/grafana/3.17.0/docs/resources/data_source) | resource |
 | [grafana_data_source.cloudwatch](https://registry.terraform.io/providers/grafana/grafana/3.17.0/docs/resources/data_source) | resource |
+| [grafana_data_source.xray](https://registry.terraform.io/providers/grafana/grafana/3.17.0/docs/resources/data_source) | resource |
 
 ## Inputs
 
@@ -58,7 +59,7 @@ No modules.
 | <a name="input_grafana_data_source_name"></a> [grafana\_data\_source\_name](#input\_grafana\_data\_source\_name) | value of the grafana data source name | `string` | `"cloudwatch"` | no |
 | <a name="input_log_bucket_name"></a> [log\_bucket\_name](#input\_log\_bucket\_name) | value of the log bucket name | `string` | `""` | no |
 | <a name="input_region"></a> [region](#input\_region) | value of the aws region | `string` | `"us-east-1"` | no |
-| <a name="input_type"></a> [type](#input\_type) | Selects which type of data source to create. Valid values are cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource | `string` | n/a | yes |
+| <a name="input_type"></a> [type](#input\_type) | Selects which type of data source to create. Valid values are cloudwatch, grafana-amazonprometheus-datasource, grafana-athena-datasource, grafana-x-ray-datasource | `string` | n/a | yes |
 
 ## Outputs
 
